@@ -1,0 +1,752 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body, html {
+    height: 100%;
+}
+.section1{
+    background-image: url("Images/bg.webp");
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.486);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1 ul{
+    float: right;
+}
+
+/* Css for Section1 contents */
+
+.Gym-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    color: #f0f8ffde;
+    font-family: 'Macondo', cursive;
+}
+.Gym-text > h1{
+    font-size: 600%;
+    padding-bottom: 2%;
+}
+.Gym-text > p{
+   padding-bottom: 1%;
+}
+.Gym-text span{
+    color: rgb(255, 251, 0);
+}
+.Gym-text .BTN{
+    font-size: 16px;
+    padding: 0.5% 2%;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+
+}
+.Gym-text .BTN:hover{
+    color:  rgb(255, 251, 0);
+    border: 1px solid  rgb(255, 251, 0);
+    text-decoration: none;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+/*  CSS coding for responsiveness of section1 */
+
+@media screen and (max-width: 780px) {
+    .Gym-text > h1{
+        font-size: 550%;
+    }
+    .Gym-text .BTN{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .Gym-text > h1{
+        font-size: 450%;
+    }
+    .Gym-text .BTN{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Gym-text > h1{
+        font-size: 380%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .Gym-text > h1{
+        font-size: 300%;
+    }
+}
+@media screen and (max-width: 385px) {
+    .Gym-text > h1{
+        font-size: 200%;
+    }
+    .Gym-text > p{
+        font-size: 80%;
+    }
+}
+
+/* CSS codes for section2 */
+
+#section2{
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+#section2 #img-div{
+    height: 100%;
+    width: 570%;
+    margin-right: 5%;
+}
+#section2 #img-div > img{
+    height: 90%;
+    width: 100%;
+}
+#text{
+    Display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#text #since{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 2px rgba(25, 25, 29, 0.658);
+    font-size: 150%;
+}
+#text > h2{
+    font-weight: 800;
+    margin-bottom: 4%;
+    text-align: center;
+}
+#text h2 > span{
+    color: rgb(255, 251, 4);
+    text-shadow: 1px 1px 2px rgba(25, 25, 29, 0.658);
+}
+#text #para{
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    font-size: 120%;
+    margin-bottom: 5%;
+}
+#BTN{
+    font-size: 16px;
+    padding: 2% 8%;
+    background-color: rgb(255, 230, 0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 25px;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 5%;
+}
+#BTN:hover{
+    text-decoration: none;
+    transition: ease 0.5s;
+    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 46, 0.2) 15px 15px, rgba(240, 46, 46, 0.1) 20px 20px, rgba(240, 46, 46, 0.05) 25px 25px;
+}
+
+
+/* CSS codes for responsive section2 */
+
+
+@media screen and (max-width: 775px) {
+    #section2{
+        flex-direction: column;
+        height: 170vh; 
+    }
+    #section2 #img-div{
+        height: 100%;
+        width: 90%;
+    }
+}
+
+/* CSS Coding for section3 */
+
+#section3{
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/bg1.jpg");
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.87);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#table-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#table-div h2{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 2px rgba(25, 25, 29, 0.658);
+    font-weight: 900;
+    text-align: center;
+}
+#table-div p{
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+}
+.table td{
+    color: #ffffff;
+    text-align: center;
+} .table th{ 
+    text-align: center;
+    color: rgb(255, 251, 0);
+}
+
+/* CSS for responsive section3 */
+
+@media screen and (max-width: 1100px) {
+    #section3{
+        height: 160vh;
+    }
+}
+@media screen and (max-width: 485px) {
+    #section3{
+        height: 150vh;
+    }
+    .table td, .table th{ 
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 370px) {
+    .table td, .table th{ 
+        font-size: 60%;
+    }
+}
+@media screen and (max-width: 330px) {
+    .table td, .table th{ 
+        font-size: 40%;
+    }
+}
+
+/*  CSS for section4 */
+
+#section4{
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#classes-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#classes-heading h1{
+    font-weight: 800;
+}
+#classes-heading span{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 1px rgba(25, 25, 29, 0.658);
+    margin-bottom: 2%;
+}
+#classes-heading p{
+    margin-bottom: 3%;
+}
+.classes-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5%;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card > img{
+    width: 100%;
+    height: 90%;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10%;
+}
+.card-text{
+    text-align: center;
+}
+.card-text h4{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 1px rgba(25, 25, 29, 0.658);
+}
+
+/* CSS for responsive section4 */
+
+@media screen and (max-width: 1030px) {
+    #section4{
+        height: 150vh;
+    }
+}
+@media screen and (max-width: 1029px) {
+    #section4{
+        height: 300vh;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #section4{
+        height: 280vh;
+    }
+}
+@media screen and (max-width: 900px) {
+    #section4{
+        height: 250vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    #section4{
+        height: 700vh;
+    }
+}
+@media screen and (max-width: 660px) {
+    #section4{
+        height: 700vh;
+    }
+}
+@media screen and (max-width: 550px) {
+    #section4{
+        height: 630vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    #section4{
+        height: 590vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    #section4{
+        height: 550vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    #section4{
+        height: 500vh;
+    }
+}
+@media screen and (max-width: 380px) {
+    #section4{
+        height: 500vh;
+    }
+}
+@media screen and (max-width: 300px) {
+    #section4{
+        height: 450vh;
+    }
+}
+@media screen and (max-width: 330px) {
+    #section4{
+        height: 440vh;
+    }
+}
+
+/* CSS for section4 */
+
+
+#section5{
+    display: flex;
+    position: relative;
+    height: 140vh;
+}
+#yoga-classes{
+    display: flex;
+    height: 100vh;
+}
+#yoga-text{
+    background-image: url("Images/Yoga (1).webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.534);
+    width: 100%;
+    height: 25%;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#yoga-text h2{
+    color: rgb(255, 251, 0);
+    font-weight: 1000;
+}
+#yoga-text p{
+    color: #ffffff;
+}
+#yoga-text a{
+    color: rgb(255, 251, 0);
+    text-decoration: underline;
+}
+#yoga-text a:hover{
+    cursor: pointer;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+#yoga{
+    width: 100%;
+    height: 80%;
+}
+
+
+/* CSS for responsive section5 */
+
+@media screen and (max-width: 610px) {
+    #section5{
+        height: 110vh;
+    }
+}
+@media screen and (max-width: 585px) {
+    #yoga{
+        height: 70%;
+    }
+}
+@media screen and (max-width: 470px) {
+    #yoga{
+        height: 60%;
+    }
+    #section5{
+        height: 60vh;
+    }
+    #yoga-text h2{
+        font-size: 80%;
+    }
+    #yoga-text p{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width: 400px) {
+    #yoga{
+        height: 50%;
+    }
+    #yoga-text h2{
+        font-size: 100%;
+    }
+    #yoga-text p{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 350px) {
+    #yoga{
+        height: 30%;
+    }
+    #yoga-text h2{
+        font-size: 70%;
+    }
+    #section5{
+        height: 60vh;
+    }
+}
+
+/* CSS for section6 */
+
+#section6{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+#fitness-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    margin-bottom: 5%;
+}
+#fitness-text p{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 1px rgba(25, 25, 29, 0.658);
+} 
+#fitness-text h2{
+    font-weight: 800;
+} 
+#fitness-text span{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 1px rgba(25, 25, 29, 0.658);
+} 
+#fitness-btn{
+    position: relative;
+    transition: 0.5s ease-in;
+    z-index: 1;
+    border: 1px solid rgb(223, 219, 2);
+    padding: 0.5% 3%;
+    border-radius: 25px;
+    font-size: 140%;
+    background: rgba(255, 255, 255,0.1);
+} 
+#fitness-btn::before , #fitness-btn::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+} 
+#fitness-btn:hover{
+    box-shadow: inset -10.5em 0 0 0 yellow, inset -10.5em 0 0 0 yellow;
+}
+#fitness-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.gallery-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+#card1{
+    background-image: url("Images/AbsFitness.webp");
+}
+#card2{
+    background-image: url("Images/DumbleLifting.webp");
+}
+#card3{
+    background-image: url("Images/WeightLift.jpg");
+}
+#card4{
+    background-image: url("Images/RopeLifting.jpg");
+}
+#card1, #card2, #card3, #card4{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.247);
+    width: 100%;
+    height: 650%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.gallery-card h4{
+    display: inline-block;
+    align-self: flex-end;
+}
+
+/* CSS for responsive Section 6 */
+
+@media screen and (max-width: 715px) {
+}
+@media screen and (max-width: 585px) {
+    #fitness-text{
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+    #section6{
+        height: 130vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    #fitness-text{
+        margin-bottom: 25%;
+    }
+}
+@media screen and (max-width: 416px) {
+    #fitness-text h2{
+        font-weight: 400;
+        font-size: 150%;
+    } 
+}
+@media screen and (max-width: 350px) {
+}
+@media screen and (max-width: 490px) {
+
+}
+@media screen and (max-width: 385px) {
+
+}
+
+/* CSS for section7 */
+
+#section7{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    text-align: center;
+}
+#trainers-heading{
+    margin-bottom: 5%;
+}
+#trainers-heading h1{
+    font-weight: 1000;
+}
+#trainers-heading span{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.trainers-list{
+    display: grid;
+    gap: 4%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.trainers-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.trainers-card > img{
+    width: 100%;
+    height: 75%;
+}
+.trainers-card:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 0px rgb(230, 230, 0);
+    border: 1px solid #00000042;
+    top: -10px;
+    left: -10px;
+}
+.trainers-text{
+    position: relative;
+    height: 25%;
+}
+.trainers-text a{
+    color: #8a8a8a;
+    padding: 4%;
+    margin: 5% 3% 0 0;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.2);
+}
+.trainers-text a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+/* CSS for responsive Section 7 */
+
+@media screen and (max-width: 1080px) {
+    .trainers-card > img{
+        height: 70%;
+    }
+    .trainers-text{
+        height: 30%;
+    }
+}
+@media screen and (max-width: 765px) {
+    .trainers-card > img{
+        height: 65%;
+    }
+    .trainers-text{
+        height: 35%;
+    }
+}
+@media screen and (max-width: 935px) {
+    #section7{
+        height: 250vh;
+    }
+}
+@media screen and (max-width: 446px) {
+    #section7{
+        height: 550vh;
+    }
+    .trainers-card > img{
+        height: 75%;
+    }
+    .trainers-text{
+        height: 25%;
+    }
+}
+@media screen and (max-width: 350px) {
+    #trainers-heading h1{
+        font-weight: 800;
+        font-size: 180%;
+    }
+    .trainers-card > img{
+        height: 70%;
+    }
+    .trainers-text{
+        height: 30%;
+    }
+    #section7{
+        height: 450vh;
+    }
+}
+@media screen and (max-width: 490px) {
+}
+@media screen and (max-width: 385px) {
+}
+/* CSS for section8 footer */
+
+#section8{
+    width: 100%;
+    height: 90vh;
+    color: #ffffff;
+    background-image: url("Images/img (2).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.664);
+    width: 100%;
+}
+#section8 a, #section8 p{
+    color: rgb(190, 190, 190);
+}
+#footer1{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+}
+#footer1 h1{
+    font-weight: 800;
+} 
+#footer1 div h3{
+    color: rgb(190, 187, 0);
+} 
+#footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer2 > a{
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255,0.5);
+    padding: 1%;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+#footer2 > a:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.856);
+}
+
+/* CSS For responsive footer */
+
+@media screen and (max-width: 715px) {
+}
+@media screen and (max-width: 535px) {
+    #footer1{
+        flex-direction: column;
+    }
+    #section8{
+        height: 230vh;
+    }
+}
+@media screen and (max-width: 450px) {
+}
+@media screen and (max-width: 416px) {
+}
+@media screen and (max-width: 330px) {
+    #footer2{
+        display: inline;
+    }
+}
+@media screen and (max-width: 490px) {
+}
+@media screen and (max-width: 385px) {
+}
